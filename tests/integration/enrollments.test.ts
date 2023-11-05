@@ -4,8 +4,8 @@ import dayjs from 'dayjs';
 import httpStatus from 'http-status';
 import * as jwt from 'jsonwebtoken';
 import supertest from 'supertest';
+
 import { createEnrollmentWithAddress, createUser, createAddressWithCEP } from '../factories';
-import { createEnrollmentWithAddress, createUser, createAddressWithCEP as createAddressWithCEP } from '../factories';
 import { cleanDb, generateValidToken } from '../helpers';
 import { prisma } from '@/config';
 import app, { init } from '@/app';
